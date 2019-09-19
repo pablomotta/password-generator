@@ -1,0 +1,16 @@
+body {
+    color: #ffffff;
+}
+.row {
+    border-radius: 10px;
+    max-width: 680px;
+    margin-top: 100px;
+}
+
+.card {
+    padding: 30px;
+}
+
+button {
+    margin: 20px 50px;
+}
