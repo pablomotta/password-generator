@@ -154,7 +154,7 @@ var copyToClipboard = function copy() {
     console.log(textarea.value);
 };
 
-copyToClipboardBtn.addEventListener('click', copy);
+copyToClipboardBtn.addEventListener('click', copyToClipboard);
 
 ///working code above ^^^^^^
 //
