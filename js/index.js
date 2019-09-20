@@ -150,6 +150,7 @@ generatePasswordBtn.addEventListener('click', showNewPassword);
 var copyToClipboard = function copy() {
     let textarea = document.getElementById('password');
     textarea.select();
+    textarea.setSelectionRange(0, 99999);
     document.execCommand('copy');
     // console.log(textarea.value);
 };
