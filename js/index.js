@@ -151,7 +151,7 @@ var copyToClipboard = function copy() {
     let textarea = document.getElementById('password');
     textarea.select();
     document.execCommand('copy');
-    console.log(textarea.value);
+    // console.log(textarea.value);
 };
 
 copyToClipboardBtn.addEventListener('click', copyToClipboard);
