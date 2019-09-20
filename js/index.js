@@ -1,10 +1,3 @@
-///User Story
-
-//User can click 'generate password' button to generate new password
-
-//application should validate and ensure that at least one
-//character type of each group is selected
-
 //DOM targets
 var generatePasswordBtn = document.getElementById('generate');
 var copyToClipboardBtn = document.getElementById('copy');
@@ -115,7 +108,7 @@ function passwordGenerator(type1, type2, type3, type4) {
     for (var i = 0; i < randomIteration1; i++) {
         var numberRandomIndex = Math.floor(Math.random() * numbers.length);
         var item = numbers[numberRandomIndex];
-        // console.log(item);
+
         suggestedPassword.push(item);
     }
     for (var i = 0; i < randomIteration2; i++) {
@@ -123,23 +116,22 @@ function passwordGenerator(type1, type2, type3, type4) {
             Math.random() * specialChar.length
         );
         var item2 = specialChar[specialCharRandomIndex];
-        // console.log(item2);
+
         suggestedPassword.push(item2);
     }
     for (var i = 0; i < randomIteration3; i++) {
         var uppercaseRandomIndex = Math.floor(Math.random() * uppercase.length);
         var item3 = uppercase[uppercaseRandomIndex];
-        // console.log(item3);
+
         suggestedPassword.push(item3);
     }
     for (var i = 0; i < randomIteration4; i++) {
         var lowercaseRandomIndex = Math.floor(Math.random() * lowercase.length);
         var item4 = lowercase[lowercaseRandomIndex];
-        // console.log(item4);
+
         suggestedPassword.push(item4);
     }
-    // console.log('*****************');
-    // console.log(suggestedPassword.toString());
+
     return suggestedPassword.join('').toString();
 }
 
@@ -155,24 +147,16 @@ function showNewPassword() {
 
 generatePasswordBtn.addEventListener('click', showNewPassword);
 
-///working code above ^^^^^^
-
-var copy = function copyToClipboard() {
-    var newPassword = placeholderText.getAttribute('placeholder');
-
-    console.log(newPassword);
+var copyToClipboard = function copy() {
+    let textarea = document.getElementById('password');
+    textarea.select();
+    document.execCommand('copy');
+    console.log(textarea.value);
 };
 
 copyToClipboardBtn.addEventListener('click', copy);
 
-// var copy = function copy() {
-//     var copyText = document.querySelector('#password');
-//     copyText.select();
-//     document.execCommand('copy');
-// };
-
-// copyToClipboardBtn.addEventListener('click', copy);
-
+///working code above ^^^^^^
 //
 //
 //
