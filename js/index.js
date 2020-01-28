@@ -156,16 +156,3 @@ var copyToClipboard = function copy() {
 };
 
 copyToClipboardBtn.addEventListener('click', copyToClipboard);
-
-///working code above ^^^^^^
-//
-//
-//
-//
-//
-////////////////// function to generate array of all letters.
-// const letters = (() => {
-//     const caps = [...Array(26)].map((val, i) => String.fromCharCode(i + 65));
-//     return caps.concat(caps.map(letter => letter.toLowerCase()));
-// })();
-// console.log(letters.join());
