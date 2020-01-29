@@ -91,10 +91,9 @@ var lowercase = [
     'z'
 ];
 
-//character types random number:
-
+//generate a random number that will be used by the loop in the passwordGenerator function.
 function randomNumGenerator(num) {
-    return Math.ceil(Math.random() * num.length + 2);
+    return Math.ceil(Math.random() * num.length);
 }
 
 function passwordGenerator(type1, type2, type3, type4) {
@@ -106,9 +105,11 @@ function passwordGenerator(type1, type2, type3, type4) {
     var suggestedPassword = [];
 
     for (var i = 0; i < randomIteration1; i++) {
+        //generate a random index of item to selected in array
         var numberRandomIndex = Math.floor(Math.random() * numbers.length);
+        //store selected item from array in variable.
         var item = numbers[numberRandomIndex];
-
+        // push item into new suggestedPassword array
         suggestedPassword.push(item);
     }
     for (var i = 0; i < randomIteration2; i++) {
@@ -152,20 +153,6 @@ var copyToClipboard = function copy() {
     textarea.select();
     textarea.setSelectionRange(0, 99999);
     document.execCommand('copy');
-    // console.log(textarea.value);
 };
 
 copyToClipboardBtn.addEventListener('click', copyToClipboard);
-
-///working code above ^^^^^^
-//
-//
-//
-//
-//
-////////////////// function to generate array of all letters.
-// const letters = (() => {
-//     const caps = [...Array(26)].map((val, i) => String.fromCharCode(i + 65));
-//     return caps.concat(caps.map(letter => letter.toLowerCase()));
-// })();
-// console.log(letters.join());
