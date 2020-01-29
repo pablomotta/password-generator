@@ -91,8 +91,7 @@ var lowercase = [
     'z'
 ];
 
-//character types random number:
-
+//generate a random number that will be used by the loop in the passwordGenerator function.
 function randomNumGenerator(num) {
     return Math.ceil(Math.random() * num.length + 2);
 }
@@ -152,7 +151,6 @@ var copyToClipboard = function copy() {
     textarea.select();
     textarea.setSelectionRange(0, 99999);
     document.execCommand('copy');
-    // console.log(textarea.value);
 };
 
 copyToClipboardBtn.addEventListener('click', copyToClipboard);
