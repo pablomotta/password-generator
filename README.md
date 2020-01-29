@@ -10,7 +10,7 @@ This application is password generator built with:
 -   Materialize-css
 -   Javascript
 
-User can be used as a widget implemented on the "sign-up" page of a web page or any section that could use a password generator.
+This app can be used as a widget implemented on the "sign-up" form of a web page or any section that could use a password generator.
 
 With this app users can:
 
