@@ -33,4 +33,4 @@ With this app users can:
 
 [Click here to visit the live website.](https://pablomotta.github.io/day-planner/)
 
-© 2019 Pablo Motta
+© 2020 Pablo Motta
