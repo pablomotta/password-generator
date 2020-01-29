@@ -93,7 +93,7 @@ var lowercase = [
 
 //generate a random number that will be used by the loop in the passwordGenerator function.
 function randomNumGenerator(num) {
-    return Math.ceil(Math.random() * num.length + 2);
+    return Math.ceil(Math.random() * num.length);
 }
 
 function passwordGenerator(type1, type2, type3, type4) {
