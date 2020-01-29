@@ -105,9 +105,11 @@ function passwordGenerator(type1, type2, type3, type4) {
     var suggestedPassword = [];
 
     for (var i = 0; i < randomIteration1; i++) {
+        //generate a random index of item to selected in array
         var numberRandomIndex = Math.floor(Math.random() * numbers.length);
+        //store selected item from array in variable.
         var item = numbers[numberRandomIndex];
-
+        // push item into new suggestedPassword array
         suggestedPassword.push(item);
     }
     for (var i = 0; i < randomIteration2; i++) {
