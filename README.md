@@ -17,6 +17,8 @@ With this app users can:
 -   Generate a password that contains numbers, uppercase letters, lowercase letters and special characters.
 -   Copy the generated password to clipboard.
 
----
+## Prerequisites
+
+-   Web browser such as Google Chrome or Safari
 
 © 2019 Pablo Motta
